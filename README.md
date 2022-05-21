@@ -6,4 +6,5 @@ Implementation of Various Data Structures In C language.
 ## 2. Linear Search and binary search.
 ## 3. Creation, Traversal and Counting the number of Nodes in the LinkedList.
 ## 4. Insertion and Deletion in a Linked list (All Cases)
-## 5. Insertion,Deletion,Traversal,Counting and Searching in a circular LinkedList.
+## 5. Insertion,Deletion,Traversal,Counting and Searching in a Circular LinkedList.
+## 6. Insertion,Deletion,Traversal,Counting and Searching in a Doubly LinkedList.
