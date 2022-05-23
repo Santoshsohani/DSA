@@ -1,5 +1,5 @@
 # DSA
-Implementation of Various Data Structures In C language.
+Implementation of Various Data Structures In C  and JAVA language.
 
 # Arrays.
 ### 1. CRUD operations on arrays.
