@@ -6,10 +6,10 @@ Implementation of Various Data Structures In C  and JAVA language.
 ### 2. Linear Search and binary search.
 
 # Linked List.
-### 1. Creation, Traversal and Counting the number of Nodes in the LinkedList.
-### 2. Insertion and Deletion in a Linked list (All Cases)
-### 3. Insertion,Deletion,Traversal,Counting and Searching in a Circular LinkedList.
-### 4. Insertion,Deletion,Traversal,Counting and Searching in a Doubly LinkedList.
+### 1. Creation, Traversal and Counting the number of Nodes in the LinkedList in C.
+### 2. Insertion and Deletion in a Linked list (All Cases) using C.
+### 3. Insertion,Deletion,Traversal,Counting and Searching in a Circular LinkedList in C.
+### 4. Insertion,Deletion,Traversal,Counting and Searching in a Doubly LinkedList in C.
 ### 5. Insertion,Deletion,Traversal,Counting and Searching in a Single LinkedList using JAVA.
 
 # Stack.
