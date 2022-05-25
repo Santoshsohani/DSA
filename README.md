@@ -16,3 +16,8 @@ Implementation of Various Data Structures In C  and JAVA language.
 ### 1. Push, pop, display and peek operations on Stack.
 ### 2. Implementation of Stack using Array.
 ### 3. Implementation of Stack using Linked List.
+
+# Queue.
+### 1. Implementation of Queue using Arrays and LinkedList.
+### 2. Insert, Delete, Display, IsEmpty, IsFull operation on Queue using arrays.
+### 3. Insert, Delete, Display, IsEmpty, IsFull, FirstAndPeek operation on Queue using LinkedList.
