@@ -1,23 +1,21 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-import arrayDataStructure.ArrayImplementation;
+import linkedListDataStructure.SingleLinkedListImplementation;
 
 public class Main {
     public static void main(String[] args) throws Exception {
+        SingleLinkedListImplementation singleLinkedList = new SingleLinkedListImplementation();
 
-        ArrayImplementation arr = new ArrayImplementation(5);
+        singleLinkedList.insertAtEnd(10);
+        singleLinkedList.insertAtEnd(20);
+        singleLinkedList.insertAtEnd(30);
+        singleLinkedList.insertAtIndex(500,1);
 
-        arr.insertAtFront(10);
-        arr.insertAtRear(20);
-        arr.insertAtRear(40);
-        arr.insertAtFront(30);
-        arr.insertAtFront(50);
+        singleLinkedList.insertAtIndex(600,2);
+
+        singleLinkedList.forwardTraversal();
 
 
-
-        arr.deleteAtIndex(0);
-
-        arr.forwardTraversal();
 
     }
 }
