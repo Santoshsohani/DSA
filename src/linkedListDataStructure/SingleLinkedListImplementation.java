@@ -158,4 +158,21 @@ public class SingleLinkedListImplementation {
         nodeToDelete.next = null;
     }
 
+    // Searching in a single linked list.
+    public boolean searchLinkedList(int key) throws Exception{
+        if(head == null){
+            throw new Exception("Linked List is empty");
+        }
+
+        SingleLinkedListNode tempNode = head;
+        while(tempNode.next != null){
+            if(tempNode.data == key){
+                return true;
+            }
+            tempNode = tempNode.next;
+        }
+
+        return false;
+    }
+
 }

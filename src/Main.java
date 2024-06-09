@@ -12,7 +12,7 @@ public class Main {
       singleLinkedList.insertAtEnd(40);
       singleLinkedList.insertAtEnd(50);
 
-      singleLinkedList.deleteAtIndex(2);
+      System.out.println(singleLinkedList.searchLinkedList(20));
 
       singleLinkedList.forwardTraversal();
 
