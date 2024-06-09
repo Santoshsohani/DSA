@@ -98,7 +98,64 @@ public class SingleLinkedListImplementation {
     }
 
     // Delete Node at Start
+    public void deleteAtStart() throws Exception{
+       if(head == null){
+           throw new Exception("Linked List is empty");
+       }else{
+           SingleLinkedListNode deleteNode = head;
+           head = head.next;
+           deleteNode.next = null;
+       }
+    }
+
     // Delete Node at End
+    public void deleteAtEnd() throws Exception{
+        if(head == null){
+            throw new Exception("Linked List is empty");
+        }else{
+          int length = lengthOfLinkedList();
+          if(length == 1){
+              head = null;
+          }else{
+              SingleLinkedListNode tempNode = head;
+              // Index starts with 0
+              for(int i = 0; i < length-2;i++){
+                  tempNode = tempNode.next;
+              }
+              tempNode.next = null;
+          }
+        }
+    }
+
+
     // Delete Node at Particular index
+    public void deleteAtIndex(int index) throws Exception {
+        if (head == null) {
+            throw new Exception("Linked List is empty");
+        }
+
+        if (index == 0) {
+            deleteAtStart();
+            return; // Exit the method after deletion
+        }
+
+        if (index == lengthOfLinkedList() - 1) {
+            deleteAtEnd();
+            return; // Exit the method after deletion
+        }
+
+        if (index >= lengthOfLinkedList()) {
+            throw new Exception("Index out of bounds");
+        }
+
+        SingleLinkedListNode currentNode = head;
+        for (int i = 0; i < index - 1; i++) {
+            currentNode = currentNode.next;
+        }
+
+        SingleLinkedListNode nodeToDelete = currentNode.next;
+        currentNode.next = nodeToDelete.next;
+        nodeToDelete.next = null;
+    }
 
 }
