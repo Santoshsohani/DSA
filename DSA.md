@@ -140,3 +140,21 @@ def right_angle_star_pattern(n:int):
         
 right_angle_star_pattern(5)
 ```
+
+3. Reverse right pyramid
+
+**Problem Statement**: Given an integer N, print the following pattern.
+```
+* * * *
+* * *
+* *
+*
+```
+```python
+def reverse_right_pyramid(n: int):
+    for i in range(n,0,-1):
+        for j in range(0,i):
+            print("* ", end="")
+        print()
+reverse_right_pyramid(5)
+```
