@@ -98,3 +98,18 @@ These are the notations which describes the performance of an algorithm as the i
 |`O()`|**Big O**|**Upper Bound** — Worst case|
 |`Ω()`|**Big Omega**|**Lower Bound** — Best case|
 |`Θ()`|**Big Theta**|**Tight Bound** — When best = worst|
+
+# Patterns
+
+1. Rectangular Star Pattern
+**Problem Statement**: Given an integer N, print the following pattern.
+```python
+def rectangular_star_pattern(n:int):
+    for i in range(0,n):
+        for j in range (0,n):
+            print("* ", end="")
+        print()
+        
+        
+rectangular_star_pattern(5)
+```
