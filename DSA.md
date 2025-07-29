@@ -102,6 +102,7 @@ These are the notations which describes the performance of an algorithm as the i
 # Patterns
 
 1. Rectangular Star Pattern
+
 **Problem Statement**: Given an integer N, print the following pattern.
 ```python
 def rectangular_star_pattern(n:int):
