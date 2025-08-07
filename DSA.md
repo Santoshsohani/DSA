@@ -177,3 +177,36 @@ def count_digits(n):
     
     return count
 ```
+2.  Reverse Integer
+
+**Problem Statement**: Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+
+```python
+class Solution:
+    def reverse(self, x: int) -> int:
+        INT_MIN = -2**31
+        INT_MAX = 2**31-1
+        sign = 1
+
+        if x < 0:
+            sign = -1
+        else:
+            sign = 1
+
+
+        x_abs = abs(x)
+        reversed_num = 0
+
+        while x_abs != 0:
+            digit = x_abs % 10
+            x_abs = x_abs // 10
+            reversed_num = reversed_num * 10 + digit
+
+
+        reversed_num *= sign
+
+        if reversed_num < INT_MIN or reversed_num > INT_MAX:
+            return 0
+        return reversed_num
+```
+
