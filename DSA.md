@@ -158,3 +158,22 @@ def reverse_right_pyramid(n: int):
         print()
 reverse_right_pyramid(5)
 ```
+
+# Mathematics
+
+1. Count digits in a number
+
+**Problem Statement**:  Given an integer N, return the number of digits in N. 
+```python
+def count_digits(n):
+    n = abs(n)
+    if n == 0:
+        return 1
+    
+    count = 0
+    while n > 0:
+        n = n//10
+        count += 1
+    
+    return count
+```
