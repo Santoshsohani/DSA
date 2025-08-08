@@ -221,3 +221,32 @@ def gcd(a,b):
         
     return a
 ```
+4. Armstrong number
+
+**Problem Statement**:  An Amrstrong number is a number that is equal to the sum of its own digits each raised to the power of the number of digits. 
+
+
+```python
+def armstrong(num):
+    if num == 1:
+        return True
+    
+    original_num = num
+    sum = 0
+    digits = []
+    
+    while num != 0:
+        digit  = num % 10
+        num = num // 10
+        digits.append(digit)
+        
+   
+    for d in digits:
+        sum  += d ** len(digits)
+    
+    
+    return sum == original_num
+
+
+print(armstrong(13))
+```
