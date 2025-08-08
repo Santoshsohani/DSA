@@ -302,5 +302,23 @@ def prime_or_not(num):
             return False
     
     return True
-    
 ```
+
+# Recursion
+A Recursion is a function which calls itself under a specific condition. The condition is called as **Base Case**
+```python
+count = 0 
+
+def print_counter():
+    global count  
+    
+    if count == 3:
+        return
+    
+    print(count)
+    count += 1
+    print_counter()  
+
+print_counter()
+```
+Here `if count == 3` is the base case.
