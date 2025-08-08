@@ -210,3 +210,14 @@ class Solution:
         return reversed_num
 ```
 
+3. GCD : GCD is the largest number which exactly divides the numbers.
+
+```python
+def gcd(a,b):
+    while b != 0:
+        temp = a
+        a = b
+        b = temp % b
+        
+    return a
+```
