@@ -322,3 +322,16 @@ def print_counter():
 print_counter()
 ```
 Here `if count == 3` is the base case.
+
+1. Print 1 to N Using Recursion
+```python
+def print_1_n(i,N):
+    if i > N:
+        return
+    
+    print(i)
+    print_1_n(i+1,N)
+    
+
+print_1_n(1,10)
+```
