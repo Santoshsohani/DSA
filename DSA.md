@@ -335,3 +335,12 @@ def print_1_n(i,N):
 
 print_1_n(1,10)
 ```
+2. Print N to 1 using Recursion
+```python
+def print_n_1(n):
+    if n < 1:
+        return
+    
+    print(n)
+    print_n_1(n-1)
+```
