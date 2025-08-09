@@ -335,6 +335,17 @@ def print_1_n(i,N):
 
 print_1_n(1,10)
 ```
+```python
+# Using BackTracking
+
+def print_1_to_n(i,n):
+    if i < 1:
+        return
+    
+    print_1_to_n(i-1,n)
+    print(i)
+```
+
 2. Print N to 1 using Recursion
 ```python
 def print_n_1(n):
