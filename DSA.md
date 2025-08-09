@@ -355,3 +355,76 @@ def print_n_1(n):
     print(n)
     print_n_1(n-1)
 ```
+
+# Hashing
+
+### **Definition**
+
+* **Hashing**: Mapping data (key) → fixed-size integer (hash value) using a **hash function**.
+* Used for **fast lookup, insertion, and deletion**.
+
+---
+
+### **Hash Function in Python**
+
+```python
+hash_value = hash(key)
+```
+
+* Deterministic within a single run.
+* Can be negative.
+* Varies between runs (security feature).
+
+---
+
+### **Hashable**
+
+* **Immutable** objects: `str`, `int`, `tuple` (if all elements are hashable).
+* Custom objects → define `__hash__` and `__eq__`.
+
+---
+
+### **Core Data Structures**
+
+* **dict**: Key → Value mapping, O(1) average lookup.
+* **set**: Stores unique keys, O(1) average lookup.
+
+---
+
+### **Collisions**
+
+* Two keys with the same hash.
+* Python resolves with **open addressing (perturbation probing)**.
+
+---
+
+### **Complexity**
+
+* **Average case**: O(1) for insert, search, delete.
+* **Worst case**: O(n) if too many collisions.
+* Space: O(n).
+
+---
+
+### **Custom Hash Example**
+
+```python
+class Point:
+    def __init__(self, x, y):
+        self.x, self.y = x, y
+    def __hash__(self):
+        return hash((self.x, self.y))
+    def __eq__(self, other):
+        return self.x == other.x and self.y == other.y
+```
+
+---
+
+### **Uses in DSA**
+
+* Duplicate detection
+* Frequency counting
+* Symbol tables, caches
+* Graph algorithms (visited sets)
+
+---
