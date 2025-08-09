@@ -428,3 +428,17 @@ class Point:
 * Graph algorithms (visited sets)
 
 ---
+
+1. Count Frequency
+```python
+arr = [10,20,30,40,40,10,20]
+
+def count_frequency(nums):
+    res = {}
+    for num in nums:
+        if num in res:
+            res[num] += 1
+        else:
+            res[num] = 1
+    return res
+```
