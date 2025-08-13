@@ -363,8 +363,16 @@ def sumOf(i,sum):
         return
     
     sumOf(i-1,sum+i)
-  
 ```
+**Using Functional Recursion**
+```python
+def sumOf(n):
+    if n == 0:
+        return 0
+        
+    return n + sumOf(n-1)
+```
+
 
 # Hashing
 
