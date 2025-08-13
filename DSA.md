@@ -394,6 +394,20 @@ def reverse_arr(i,j):
     reverse_arr(i+1,j-1)
 ```
 
+6. Palindrome
+```python
+word = "markram"
+
+def palindrome(i):
+    if i >= len(word) // 2:
+        return True
+    
+    if word[i] != word[len(word) - 1 - i]:
+        return False
+    
+    return palindrome(i + 1)
+```
+
 # Hashing
 
 ### **Definition**
