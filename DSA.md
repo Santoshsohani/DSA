@@ -372,7 +372,14 @@ def sumOf(n):
         
     return n + sumOf(n-1)
 ```
-
+4. Factoril of a number
+```python
+def fact(n):
+    if n == 0 or n == 1:
+        return 1
+        
+    return n * fact(n-1)
+```
 
 # Hashing
 
