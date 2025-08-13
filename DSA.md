@@ -372,13 +372,26 @@ def sumOf(n):
         
     return n + sumOf(n-1)
 ```
-4. Factoril of a number
+4. Factorial of a number
 ```python
 def fact(n):
     if n == 0 or n == 1:
         return 1
         
     return n * fact(n-1)
+```
+
+5. Reverse an array
+```python
+def reverse_arr(i,j):
+    if i >= j:
+        return 
+    
+    temp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = temp
+    
+    reverse_arr(i+1,j-1)
 ```
 
 # Hashing
