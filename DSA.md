@@ -355,6 +355,16 @@ def print_n_1(n):
     print(n)
     print_n_1(n-1)
 ```
+3. Sum of first N numbers (Paramterized Recursion)
+```python
+def sumOf(i,sum):
+    if i < 1:
+        print(sum)
+        return
+    
+    sumOf(i-1,sum+i)
+  
+```
 
 # Hashing
 
