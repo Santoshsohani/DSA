@@ -494,3 +494,27 @@ def count_frequency(nums):
             res[num] = 1
     return res
 ```
+
+# Sorting Algorithmns
+
+1. Selection Sort
+
+It is all about selection of minimum value and swap with the starting index of the iteration.
+```python
+def selection_sort(arr):
+    n = len(arr)
+    
+    for i in range(0, n-1):
+        mini = i
+        
+        for j in range(i+1, n):
+            if arr[j] < arr[mini]:
+                mini = j
+        
+        temp = arr[i]
+        arr[i] = arr[mini]
+        arr[mini] = temp
+    
+    return arr
+```
+- start with `0 to n-2` and inner loop from `i+1 to n-1`
